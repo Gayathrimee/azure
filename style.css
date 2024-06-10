@@ -3132,13 +3132,14 @@ header .nav-bar {
 .footer .foot {
     background-color: #f4f5f5;
     color: #1a1a1f;
-    padding: 48px 0 36px;
+    padding: 48px 0 48px;
+    margin-bottom: 0;
     font-size: 12px;
     font-family: 'Segoe UI', SegoeUI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .foot-nav {
-    max-width: 1600px;
+    max-width: 1560px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 18px;
@@ -3221,7 +3222,7 @@ header .nav-bar {
     margin-left: 24px;
 }
 .foot-botm{
-    max-width: 1600px;
+    max-width: 1560px;
     margin-top: 36px;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -3263,4 +3264,188 @@ header .nav-bar {
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+.exaz ul li a:hover{
+    text-decoration: underline;
+}
+.foot-down{
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: auto fit-content(65%);
+    /* column-gap:24px ; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+    max-width: 1600px;
+}
+@media screen and (min-width:48em){
+
+.foot-left{
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+    align-self: start;
+    }
+.langs{
+    flex: 0 1 188px;
+    display: block;
+    box-sizing: border-box;
+}    
+}
+.langs span{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    cursor: default;
+    box-sizing: border-box;
+}
+.langs select{
+    border: 1px solid #747479;
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #1a1a1f;
+    box-sizing: border-box;
+    font-family: inherit;
+    background-color: #ffffff;
+}
+.foot-left a{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #1a1a1f;
+    margin-top: 24px;
+    text-decoration: none;
+    /* background-color: #6f9e02; */
+    cursor: default;
+}
+.foot-left a img{
+    height: 16px;
+    flex-shrink: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: default;
+}
+.foot-left a span{
+    box-sizing: border-box;
+    font-size: 11px;
+    cursor: default;
+}
+.foot-left a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.foot-left a span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.foot-right{ 
+    margin-top:36px;
+}
+@media screen and (min-width:60em){
+   
+.foot-right:last-child{
+    margin-left: auto;
+}    
+}
+.foot-right ul{
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+}
+.foot-right ul li{
+    margin: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.foot-right ul li a{
+    color: #1a1a1f;
+    display: block;
+    padding: 2px 0;
+    text-decoration: none;
+    margin-bottom: 12px;
+    margin-left: 16px;
+    font-size: 11px;
+}
+.foot-right ul .copy{
+    margin-left: 12px;
+    white-space: nowrap;
+    font-weight: 600;
+    padding: 2px 0;
+}
+.foot-right .copy span{
+    /* letter-spacing: 0.01em; */
+    font-weight: 600;
+    font-size: 11px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+/* .chat{
+    background-color:#f4fafd ;
+} */
+.chat{
+    position: fixed;
+    right: 1rem;
+    bottom: 0;
+    /* top: 0; */
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    z-index: 1030;
+    /* margin-right: 0px; */
+}
+.chat button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding:1.5rem 0.85rem;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    background-color: #0067bb;
+    color: #ffffff;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    /* padding-left: calc(.75rem + 1.4375em); */
+}
+.chat button img{
+    height: 20px;
+    margin: -0.75px 0 0;
+    /* padding-top: 5px; */
+}
+.chat button span{
+    font-size:15px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.02em;
+    /* padding: 0.5rem; */
+}
+@media screen and (max-width:767px){
+
+header{
+    position: relative;
+    background-color: #ffffff;
+    display: block;
+}
+.nav-bar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
 }
